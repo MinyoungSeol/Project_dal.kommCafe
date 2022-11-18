@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+/*기본 CSS(모바일 사이즈)*/
+
+
+/*내비게이션 영역*/
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav .grayMenu {
+    width: 20%;
+    float: left;
+    background: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav .grayMenu:hover {
+    color: #c51d2a;
+}
+
+.nav .redMenu {
+    width: 20%;
+    float: left;
+    background: #333;
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+.redMenu img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+/*콘테이너 영역*/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.redlineWrap {
+    margin: 150px auto;
+    position: relative;
+    cursor: default;
+}
+
+.redLine {
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    height: 4px;
+    background: #c51d2a;
+    position: absolute;
+}
+
+.redLine1 {
+    left: 0;
+}
+
+.redLine2 {
+    right: 0;
+    bottom: 0;
+}
+
+.redlineWrap h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.redlineWrap p {
+    font-size: 18px;
+    color: #777;
+    letter-spacing: -2px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.container .tab {
+
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+.container .tab::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+.tab button {
+    float: left;
+    display: block;
+    width: 25%;
+    padding: 20px 0;
+    font-size: 18px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background: none;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    color: #999;
+    transition: all 0.3s;
+}
+
+
+.tab button:nth-of-type(1) {
+    color: #c51d2a;
+}
+
+.menuCon {
+    padding: 10px;
+}
+
+.menuCon::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.coffeeCon {
+    width: 100%;
+}
+
+.nonCoffeeCon {
+    width: 100%;
+    display: none;
+}
+
+.teaCon {
+    width: 100%;
+    display: none;
+}
+
+.etcCon {
+    width: 100%;
+    display: none;
+}
+
+
+.menuBox {
+    position: relative;
+    background: #f1f1f1;
+    width: 48%;
+    margin: 1%;
+    padding: 15px;
+    height: 350px;
+    float: left;
+    transition: all 1s;
+}
+
+
+.menuBox img {
+    width: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+}
+
+.menuBox img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.menuInfo {
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    display: none;
+}
+
+.menuInfo .close {
+    float: right;
+    margin: 5px 8px 0 0;
+    cursor: pointer;
+}
+
+.menuInfo .close i {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.menuInfo h3 {
+    clear: both;
+    padding: 40px 20px 20px;
+}
+
+.menuInfo .grayline {
+    display: block;
+    background: #888;
+    width: 70%;
+    height: 3px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.menuInfo p {
+    font-size: 15px;
+    letter-spacing: -1.5px;
+    padding: 0 20px;
+}
+
+.menuInfo h4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #c51d2a;
+    width: 100%;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.menuInfo h4 i {
+    margin-right: 5px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+/*푸터 영역*/
+
+.footer {
+    width: 100%;
+    background: #333;
+    position: relative;
+    padding: 30px 15px;
+    margin-top: 150px;
+}
+
+.footer a {
+    position: absolute;
+    bottom: 110%;
+    display: block;
+    padding: 14px 16px;
+    background: #c51d2a;
+    color: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.footer a:hover {
+    background: #333;
+    color: #c51d2a;
+}
+
+.footer a i {
+    font-size: 20px;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer p {
+    color: #aaa;
+    font-size: 14px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footer p span {
+    cursor: pointer;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/*PC CSS*/
+
+@media screen and (min-width:900px) {
+
+    /*내비게이션 영역*/
+    .nav .grayMenu {
+        padding: 27px 0;
+        font-size: 18px;
+    }
+
+    .nav .redMenu {
+        height: 77px;
+        transition: all 0.3s ease;
+    }
+    /*콘테이너 영역*/
+    .container {
+        max-width: 1200px;
+        width: 85%;
+    }
+
+
+    /*메뉴 박스 영역*/
+    .menuBox {
+        width: 31.333%;
+        margin: 1%;
+        padding: 15px;
+        height: 450px;
+    }
+
+    .menuInfo {
+
+        width: 100%;
+        height: 450px;
+    }
+
+    .menuInfo h4 {
+        width: 100%;
+        padding: 40px 25px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+    /*푸터 영역*/
+    .footer {
+        clear: both;
+    }
+}

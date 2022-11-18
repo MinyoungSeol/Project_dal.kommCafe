@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+
+
+
+/*기본 CSS(모바일 사이즈)*/
+
+
+/*내비게이션 영역*/
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav .grayMenu {
+    width: 20%;
+    float: left;
+    background: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav .grayMenu:hover {
+    color: #c51d2a;
+}
+
+.nav .redMenu {
+    width: 20%;
+    float: left;
+    background: #333;
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+.redMenu img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/*콘테이너 영역*/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.redlineWrap {
+    margin: 150px auto;
+    position: relative;
+    cursor: default;
+}
+
+.redLine {
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    height: 4px;
+    background: #c51d2a;
+    position: absolute;
+}
+
+.redLine1 {
+    left: 0;
+}
+
+.redLine2 {
+    right: 0;
+    bottom: 0;
+}
+
+.redlineWrap h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.redlineWrap p {
+    font-size: 18px;
+    color: #777;
+    letter-spacing: -2px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.dkStory {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2399px;
+    background: url(../image/dkstory.jpg) no-repeat center;
+}
+
+.container iframe {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: block;
+}
+
+
+
+
+/*푸터 영역*/
+
+.footer {
+    width: 100%;
+    background: #333;
+    position: relative;
+    padding: 30px 15px;
+    margin-top: 150px;
+}
+
+.footer a {
+    position: absolute;
+    bottom: 110%;
+    display: block;
+    padding: 14px 16px;
+    background: #c51d2a;
+    color: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.footer a:hover {
+    background: #333;
+    color: #c51d2a;
+}
+
+.footer a i {
+    font-size: 20px;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer p {
+    color: #aaa;
+    font-size: 14px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footer p span {
+    cursor: pointer;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+
+
+
+/*PC CSS*/
+
+@media screen and (min-width:900px) {
+
+    /*내비게이션 영역*/
+    .nav .grayMenu {
+        padding: 27px 0;
+        font-size: 18px;
+    }
+
+    .nav .redMenu {
+        height: 77px;
+        transition: all 0.3s ease;
+    }
+    /*콘테이너 영역*/
+    .container {
+        max-width: 1200px;
+        width: 85%;
+    }
+    /*푸터 영역*/
+    .footer {
+        clear: both;
+    }
+}

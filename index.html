@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta name="description" content="dal.komm 커피 공식 웹사이트입니다">
+    <meta name="keywords" content="커피, 달콤커피, 카페, dal.komm">
+    <meta name="author" content="Rian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>dal.komm COFFEE</title>
+    <link rel="stylesheet" href="css/myReset.css">
+    <link rel="stylesheet" href="css/mainCss.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <!-- //Link Swiper's CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.esm.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    /*font-family: 'Gothic A1', sans-serif;*/
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="banner/banner1.jpg" alt="slide"></div>
+            <div class="swiper-slide"><img src="banner/banner2.jpg" alt="slide"></div>
+            <div class="swiper-slide"><img src="banner/banner3.jpg" alt="slide"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
+    <nav class="nav">
+        <a href="story.html" class="grayMenu">STORY</a>
+        <a href="menu.html" class="grayMenu">MENU</a>
+        <a href="#.html" class="redMenu">
+            <img src="image/LOGO.png" alt="logo">
+        </a>
+        <a href="sorry.html" class="grayMenu" style="margin-left:20%">FRANCHISE</a>
+        <a href="sorry.html" class="grayMenu">MUSIC</a>
+    </nav>
+    <!--//nav-->
+    <div class="eventBanner">
+        <a href="sorry.html">
+            <img src="banner/banner4.jpg" alt="event banner">
+        </a>
+    </div>
+    <!--//eventBn-->
+    <div class="container">
+        <div class="seasonMenu">
+            <span class="redLine redLine1"></span>
+            <h2>dal.komm season</h2>
+            <span class="redLine redLine2"></span>
+            <div class="seasonBanner">
+                <img src="banner/banner5.jpg" alt="season banner">
+                <a href="sorry.html">자세히 보기</a>
+            </div>
+        </div>
+        <!--//season-->
+        <div class="circleWrap">
+            <div id="circle1">
+                <div class="medal01 medal"></div>
+                <a href="story.html" class="medal02 medal"></a>
+            </div>
+            <div id="circle2">
+                <div class="medal03 medal"></div>
+                <a href="sorry.html" class="medal04 medal"></a>
+            </div>
+            <div id="circle3">
+                <div class="medal05 medal"></div>
+                <a href="sorry.html" class="medal06 medal"></a>
+            </div>
+            <div id="circle4">
+                <div class="medal07 medal"></div>
+                <a href="menu.html" class="medal08 medal"></a>
+            </div>
+        </div>
+        <!--//circleWrap-->
+    </div>
+    <!--//container-->
+    <footer class="footer">
+        <a href="#" class="goUp"><i class="fas fa-chevron-up"></i></a>
+        <img src="image/LOGO.png" alt="logo">
+        <p>(주)달콤 | 주소지 : 경기도 성남시 분당구 분당로 55 서현 퍼스트타워 9층 |
+            <br> TEL : 1661 - 1399 | 대표자 : 지성원 | 사업자등록번호 : 144-81-09353 |
+            <br> 통신판매업신고 : 제 2016-성남분당-0680호 | <span>개인정보취급방침</span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mainJs.js"></script>
+
+</body>
+
+</html>
