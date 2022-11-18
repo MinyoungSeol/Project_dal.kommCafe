@@ -103,7 +103,12 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 2399px;
-    background: url(../image/dkstory.jpg) no-repeat center;
+    /* background: url(../image/dkstory.jpg) no-repeat center; */
+}
+.dkStoryImg{
+    display:block;
+    margin: 0 auto;
+    height: 2399px;
 }
 
 .container iframe {
